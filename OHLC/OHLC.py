@@ -23,4 +23,18 @@ fig = go.Figure(data=go.Ohlc(x=df2_filtrat['Date'],
                              high=df2_filtrat['High'],
                              low=df2_filtrat['Low'],
                              close=df2_filtrat['Close']))
-fig.show()
+
+fig.update_layout(
+    title={
+        'text':'Evolució del preu de les accions de Google',
+        'x': 0.5,
+        'font': {
+            'size': 30
+        }
+    },
+    yaxis_title ={
+        'text':'Preu',
+        'font': {
+            'size':20
+        }
+    }
